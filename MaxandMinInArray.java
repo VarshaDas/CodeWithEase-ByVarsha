@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class MaxandMinInArray {
     public static void main(String[] args) {
-        int[] arr = {2, 1, -4, -15, 3};
+        int[] arr = {2, 1, -4, -15, 3, 5, 89, -78};
         findMaxandMin(arr);
         findMaxandMinOptimal(arr);
 
@@ -67,18 +67,17 @@ public class MaxandMinInArray {
      */
 
     public static int maxRec(int[] arr, int pos) {
-
         //base
         if (pos == arr.length - 1)
             return arr[pos];
         //main body
         int max = maxRec(arr, pos + 1);
-        if (arr[pos] < max) {
-            return max;
-        } else {
-            return arr[pos];
-        }
-
+//        if (arr[pos] < max) {
+//            return max;
+//        } else {
+//            return arr[pos];
+//        }
+        return Math.max(max,arr[pos]);
     }
 
     public static int minRec(int[] arr, int pos) {
@@ -88,11 +87,11 @@ public class MaxandMinInArray {
             return arr[pos];
         //main body
         int min = minRec(arr, pos + 1);
-        if (arr[pos] > min) {
-            return min;
-        } else {
-            return arr[pos];
-        }
-
+//        if (arr[pos] > min) {
+//            return min;
+//        } else {
+//            return arr[pos];
+//        }
+        return Math.min(min,arr[pos]);
     }
 }
