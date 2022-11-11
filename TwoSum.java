@@ -54,6 +54,5 @@ public class TwoSum {
             hm.put(nums[i], i);
         }
         return arr;
-
     }
 }

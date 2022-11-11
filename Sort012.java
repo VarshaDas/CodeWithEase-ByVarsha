@@ -8,7 +8,7 @@ public class Sort012 {
     }
 
     /*
-        Approach using loops:
+        Approach using loops: Counting Sort
             We will count the zeroes, ones, twos.
             Then we will insert in the array one by one.
 
@@ -42,4 +42,8 @@ public class Sort012 {
         }
 
     }
+
+
+
+
 }
