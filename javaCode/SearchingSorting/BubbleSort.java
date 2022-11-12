@@ -1,3 +1,13 @@
+/**
+ * Bubble Sort works by iterating through the elements of the array and
+ * doing pairwise swap of adjacent elements that are out of order.
+ *
+ *
+ * TC - O(n^2),  Because of nested loops.
+ * SC - O(1)
+ */
+package javaCode.SearchingSorting;
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {2, 1, -4, -15, 3, 5, 89, -78};

@@ -1,3 +1,5 @@
+package javaCode.Arrays;
+
 import java.util.Arrays;
 
 public class MaxandMinInArray {
@@ -7,10 +9,10 @@ public class MaxandMinInArray {
         findMaxandMinOptimal(arr);
 
         //Recursion
-        int max = maxRec(arr, 0);
-        System.out.println("Maximum using Recursion: "+max);
-        int min = minRec(arr, 0);
-        System.out.println("Minimum using Recursion: "+min);
+        int max = maxRec(arr, arr.length);
+        System.out.println("Maximum using Recursion: " + max);
+        int min = minRec(arr, arr.length);
+        System.out.println("Minimum using Recursion: " + min);
     }
 
     /*
@@ -66,32 +68,18 @@ public class MaxandMinInArray {
              TC - O(n)
      */
 
-    public static int maxRec(int[] arr, int pos) {
-        //base
-        if (pos == arr.length - 1)
-            return arr[pos];
-        //main body
-        int max = maxRec(arr, pos + 1);
-//        if (arr[pos] < max) {
-//            return max;
-//        } else {
-//            return arr[pos];
-//        }
-        return Math.max(max,arr[pos]);
+    public static int maxRec(int[] A, int n) {
+        if (n == 1)
+            return A[0];
+
+        return Math.max(A[n - 1], maxRec(A, n - 1));
     }
 
-    public static int minRec(int[] arr, int pos) {
+    public static int minRec(int[] A, int n) {
 
-        //base
-        if (pos == arr.length - 1)
-            return arr[pos];
-        //main body
-        int min = minRec(arr, pos + 1);
-//        if (arr[pos] > min) {
-//            return min;
-//        } else {
-//            return arr[pos];
-//        }
-        return Math.min(min,arr[pos]);
+        if (n == 1)
+            return A[0];
+
+        return Math.min(A[n - 1], minRec(A, n - 1));
     }
 }

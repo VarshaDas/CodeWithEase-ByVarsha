@@ -1,3 +1,14 @@
+package javaCode.SearchingSorting;
+
+/**
+ * Linear search also known as sequential search.
+ * In this we go through the entire list and try to find a match for a single element.
+ * If we find a match, then the address of the target element is returned.
+ *
+ * TC - O(n)
+ * SC - O(n)
+ */
+
 class LinearSearch {
 
     public static void main(String args[]) {
