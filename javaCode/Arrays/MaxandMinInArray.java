@@ -1,5 +1,7 @@
 package javaCode.Arrays;
-
+/**
+    @Problem: Finding maximum and minimum element in an array.
+*/
 import java.util.Arrays;
 
 public class MaxandMinInArray {
