@@ -1,4 +1,4 @@
-package javaCode.SearchingSorting;
+package SearchingSorting;
 
 /**
  * Linear search also known as sequential search.

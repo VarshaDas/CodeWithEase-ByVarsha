@@ -1,4 +1,4 @@
-package javaCode.Arrays;
+package Arrays;
 
 /**
  * @Problem: Two Sum - Leetcode(1)

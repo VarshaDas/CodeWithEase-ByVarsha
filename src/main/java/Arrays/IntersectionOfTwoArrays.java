@@ -1,4 +1,4 @@
-package javaCode.Arrays;
+package Arrays;
 
 /**
  * Given two integer arrays nums1 and nums2, return an array of their intersection.
@@ -22,7 +22,6 @@ package javaCode.Arrays;
  * 0 <= nums1[i], nums2[i] <= 1000
  */
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -32,7 +31,7 @@ public class IntersectionOfTwoArrays {
     public static void main(String[] args) {
         int[] nums1 = {4,9,5};
         int[] nums2 = {9,4,9,8,4};
-        int[] arr = intersection(nums1,nums2);
+        // int[] arr = intersection(nums1,nums2);
         int[] ints = intersectionTwoPointers(nums1, nums2);
         for (int a:ints) {
             System.out.print(a+" ");

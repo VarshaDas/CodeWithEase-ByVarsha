@@ -1,4 +1,4 @@
-package javaCode.Arrays;
+package Arrays;
 
 /**
  * Given two arrays a[] and b[] of size n and m respectively. The task is to find union between these two arrays.

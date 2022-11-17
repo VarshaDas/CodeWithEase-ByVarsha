@@ -1,4 +1,4 @@
-package javaCode.Arrays;
+package Arrays;
 
 /**
  * @Problem: Longest Consecutive Sequence - Leetcode(128)

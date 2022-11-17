@@ -6,7 +6,7 @@
  * TC - O(n^2),  Because of nested loops.
  * SC - O(1)
  */
-package javaCode.SearchingSorting;
+package SearchingSorting;
 
 public class BubbleSort {
     public static void main(String[] args) {

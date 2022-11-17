@@ -1,4 +1,4 @@
-package javaCode.Arrays;
+package Arrays;
 
 /**
  *  Given an array A of size N, print the reverse of it.
@@ -24,7 +24,7 @@ package javaCode.Arrays;
  */
 
 import java.util.*;
-import java.lang.*;
+
 
 class ReverseArray {
 

@@ -1,4 +1,4 @@
-package javaCode.Arrays;
+package Arrays;
 
 public class MaxSubarraySum {
     public static void main(String[] args) {
