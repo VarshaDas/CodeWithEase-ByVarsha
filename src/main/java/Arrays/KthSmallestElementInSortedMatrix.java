@@ -42,8 +42,8 @@ public class KthSmallestElementInSortedMatrix {
         We will traverse the matrix and store the elements in a 1-d array/ list.
         Then we will sort the array and return the element at the Kth position.
 
-        TC - O(n^2) because of traversal
-        SC - O(n)
+        TC - O(i*j)
+        SC - O(i*j)
      */
 
 
