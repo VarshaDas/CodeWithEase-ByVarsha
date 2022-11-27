@@ -7,6 +7,18 @@ public class BinarySearch {
         System.out.println(binarySearchRecursive(arr, 7, 0, arr.length - 1));
     }
 
+    /*
+        The binary search algorithm always works on a sorted list.
+        After sorting the middle element is checked whether it's the desired value or not.
+            If the desired value is equal to the middle index’s value, then the index is the answer.
+            If the desired value is lower than the middle index’s value, then we check the left side of the array, i.e  0th position to mid - 1.
+            If the desired value is greater than the middle index’s value, then we check the right side of the array, i.e  mid + 1 position to last.
+        The process is then repeated on shorted lists until the desired value is found.
+        The worst case is when we have to keep reducing the search space till it has only one element.
+        The worst-case time complexity of Binary search is O(logn).
+     */
+
+
     public static int binarySearchIterative(int arr[], int x) {
         int low = 0;
         int high = arr.length - 1;

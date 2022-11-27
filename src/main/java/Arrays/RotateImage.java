@@ -30,20 +30,10 @@ public class RotateImage {
     public static void main(String[] args) {
         int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[][] arr1 = rotateBruteForce(arr);
-        for (int[] x : arr1) {
-            for (int y : x) {
-                System.out.print(y + " ");
-            }
-            System.out.println();
-        }
+        display2D(arr1);
         System.out.println();
         rotate(arr);
-        for (int[] x : arr) {
-            for (int y : x) {
-                System.out.print(y + " ");
-            }
-            System.out.println();
-        }
+        display2D(arr);
 
     }
 
@@ -71,6 +61,16 @@ public class RotateImage {
     /*
          2nd Approach:
          We will first transpose the matrix. and then we wll reverse all rows in-place.
+         The transpose of a matrix is found by interchanging its rows into columns or columns into rows.
+         The transpose of a matrix can be computed by assigning [i][j] element in the transpose matrix equal to the [j][i] in the original matrix.
+        Suppose this is the matrix:
+        1 2 3
+        4 5 6
+        7 8 9
+        Then transpose of the above matrix is:
+        1 4 7
+        2 5 8
+        3 6 9
 
          TC - O(n^2)
          SC - O(1)
@@ -94,6 +94,14 @@ public class RotateImage {
             }
         }
 
+    }
+    public static void display2D(int[][] arr){
+        for (int[] x : arr) {
+            for (int y : x) {
+                System.out.print(y + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
