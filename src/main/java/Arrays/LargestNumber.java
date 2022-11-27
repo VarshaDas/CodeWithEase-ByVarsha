@@ -54,6 +54,8 @@ public class LargestNumber {
             }
         });
 //        Arrays.sort(arr, (o1, o2) -> (o2 + o1).compareTo(o1 + o2));
+        if(arr[0].charAt(0) == '0')
+            return "0";
         StringBuilder stringBuilder = new StringBuilder();
         for (String a : arr) {
             stringBuilder.append(a);
